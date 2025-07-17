@@ -11,8 +11,8 @@ def add_todo():
 
 st.title("My Todo App")
 st.subheader("This is my todo app")
-st.write("To add a todo type it in and press enter")
-st.write("To delete a todo press the checkbox on the todo")
+st.write("To <b>add</b> a todo type it in and press enter", unsafe_allow_html=True)
+st.write("To <b>delete</b> a todo press the checkbox on the todo", unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
